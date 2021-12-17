@@ -19,11 +19,6 @@ public class ChoiceController : MonoBehaviour
     {
         int playerScore;
         int compScore;
-        Debug.Log("Animation Start");
-        CompChoice.GetComponent<Animator>().enabled = true;
-        CompChoice.GetComponent<Animator>().Play("CompChoice");
-        CompChoice.GetComponent<Animator>().enabled = false;
-        Debug.Log("Animation Played!");
         string randChoice = Choices[UnityEngine.Random.Range(0, Choices.Length)];
 
         switch (randChoice)
